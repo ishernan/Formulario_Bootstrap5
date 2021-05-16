@@ -10,6 +10,6 @@ formulario.addEventListener('submit', (e)=> {
   console.log('campo Password', datos.get('passCampo'))
   console.log('campo CheckBox', datos.get('checkCampo'))
 
-  formulario.reset();
+  formulario.reset();//pour remettre a zero le formulaire  
   
   })

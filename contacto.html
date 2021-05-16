@@ -63,7 +63,11 @@
             >
           <label class="form-check-label" for="exampleCheck1">Acepta las condiciones</label>
         </div>
-        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        <button id="btnEnviar" type="submit" class="btn btn-primary w-100">Enviar</button>
+        <button id="btnCargando" class="btn btn-primary" type="button" disabled>
+          <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+          <span class="visually-hidden"></span> Cargando...
+        </button>
 
       </form>
 
