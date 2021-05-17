@@ -2,6 +2,7 @@
 const formulario  = document.querySelector('#formulario');
 const btnEnviar   = document.querySelector('#btnEnviar');
 const btnCargando = document.querySelector('#btnCargando');
+const toast       = document.querySelector('.toast');
 
 
 formulario.addEventListener('submit', (e)=> {
@@ -19,6 +20,10 @@ formulario.addEventListener('submit', (e)=> {
   setTimeout(()=> {
    btnEnviar.classList.remove("d-none")
    btnCargando.classList.add('d-none')
+
+   const toastEvent = new bootstrap.Toast(toast)
+   toastEvent.show()
+
   }, 3000); 
 
   formulario.reset();//pour remettre a zero le formulaire  
